@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header{
+    /* al poner 100% en wigth el contenido se adapta al ancho */
+    width: 100%;
+    /* al poner 100% en wigth el contenido se adapta al alto */
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+    padding-top: 40px;
+}
+
+nav{
+    width: 1200px;  
+    margin: 0 auto;
+    /* sirve para organizar elementos uno a lado del otro */
+    display: flex;
+    /* ajustamos los elementos en forma horizontal */
+    justify-content: space-between;
+    /* ajustamos los elementos de forma vertical */
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin: 0 15px;
+    /* eliminamos el estilo de las biñetas en la lista */
+    list-style: none;
+}
+
+nav ul li a{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+
+#hero{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 170px;
+}
+
+#hero h1{
+    color: #e8f00c;
+    font-size: 50px;
+    margin: 0;
+}
+
+#hero h2{
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+#hero .btn{
+background: #e8f00c;
+padding: 12px 30px;
+font-size: 30px;
+text-decoration: none;
+border-radius: 8px;
+color: gray;
+font-weight: 700;
+transition: .4s;
+}
+
+#hero .btn:hover{
+    transform: scale(1.1);
+    padding: 12px 40px;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+/* seccion planes */
+main #planes {
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+main #planes .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main #planes .container h2{
+    font-size: 46px;
+}
+
+main #planes .container p{
+    font-size: 20px;
+}
+
+main #planes .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+
+main #planes .container .row .col-4{
+    width: 259px;
+    position: relative;
+}
+
+main #planes .container .row .col-4 h3{
+    position: absolute;
+    margin: 0;
+    top: 115px;
+    left: 0;
+    right: 0;
+    color: #e8f00c;
+    /* sirve para pasar el texto a mayuscula */
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/* sección destinos */
+main #destinos{
+    width: 100%;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+main #destinos .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main #destinos .container h2{
+    color: #e8f00c;
+    font-size: 50px;
+}
+
+main #destinos .container .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+main #destinos .container .row .col-6 h3{
+    color: #ffffff;
+    font-size: 30px;
+}
+
+/* seccion contacto */
+
+main #contacto{
+    background: #e8f00c;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+main #contacto .container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+main #contacto .container h2{
+    font-size: 50px;
+}
+
+main #contacto .container p{
+    font-size: 26px;
+}
+
+main #contacto .container .row{
+    display: flex;
+    justify-content: center;
+}
+
+main #contacto .container .row input{
+    padding: 10px 20px;
+    font-size: 28px;
+    margin: 15px 10px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+main #contacto .container .row select{
+    padding: 10px 20px;
+    font-size: 28px;
+    margin: 15px 10px;
+    width: 385px;
+    border-radius: 20px;
+}
+
+main #contacto .container button{
+    padding: 10px 40px;
+    font-size: 25px;
+    margin-top: 40px;
+    background: #949732;
+    color: #ffffff;
+    border: none;
+}
+
+footer{
+    background: #141212;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    font-size: 25px;
+}
